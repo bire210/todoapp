@@ -1,0 +1,93 @@
+.app {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  .search {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .list {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .listItem {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #444;
+    font-weight: 300;
+  }
+  
+  table {
+    width: 100%;
+    margin: 50px 0px;
+    border-spacing: 15px;
+    color: #444;
+  }
+  
+  tr {
+    margin-bottom: 20px;
+  }
+  
+  th {
+    width: 250px;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  td {
+    width: 250px;
+    font-size: 20px;
+  }
+
+
+  .top{
+    width: 70%;
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    
+    padding: 0px 20px;
+  }
+
+  .top>input{
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 5px 0px;
+  }
+ 
+ 
+  .add{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-size: xx-large;
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+
+  .list{
+    width: 70%;
+    margin-top: 30px;
+  }
+  .todo{
+    border: 1px solid black;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0px;
+    font-size: 40px;
+  }
+ 
+  .icon{
+    font-size: 80px;
+  }
