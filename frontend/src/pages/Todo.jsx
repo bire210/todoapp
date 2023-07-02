@@ -3,6 +3,7 @@ import axios from "axios";
 import "./style.css";
 import Table from "../components/Table";
 import { Box, Text } from "@chakra-ui/react";
+import { Button, ButtonGroup } from '@chakra-ui/react'
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router";
 import { addToDo, getAllToDo, updateToDo,deleteToDo } from "../utils/HandleApi";
@@ -51,7 +52,7 @@ const Todo = () => {
             title: error.message,
             description: error.response.data.message,
             status: "error",
-            duration: 1000,
+            duration: 5000,
             isClosable: true,
             position: "bottom",
           });
@@ -85,6 +86,20 @@ const Todo = () => {
         <Text fontSize={"4xl"} fontFamily={"work sans"}>
           ToDo App
         </Text>
+        <Button style={{
+          marginLeft:"50%"
+        }} colorScheme='blue' onClick={()=>{
+          localStorage.clear();
+          toast({
+            title: "Log out Successfully",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+            position: "bottom",
+          });
+          history.push("/")
+
+        }} >Log Out</Button>
       </Box>
       <input
         className="search"

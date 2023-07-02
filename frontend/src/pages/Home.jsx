@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   Container,
   Box,
@@ -15,7 +15,6 @@ import { useHistory } from "react-router";
 
 
 const Home = () => {
-  const [user, setUser] = useState();
   const history = useHistory();
 
   useEffect(() => {
